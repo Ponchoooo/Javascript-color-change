@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Try it yourself!</title>
+</head>
+<body>
+    
+    <div onclick="changeColor(this)" class="box-color" >
+     Press me to change my color!
+    </div>
+
+</body>
+</html>
+
+<style>
+    .box-color{
+        background-color:red;
+        text-align: center;
+        margin-left:35rem;
+        margin-right:35rem;
+        color: white;
+        line-height: 200px;
+        margin-top:10rem;
+        
+    }
+    
+</style>
+
+<script>
+function changeColor(element){
+
+var current=element.style.backgroundColor;
+
+if(current == "red"){
+    element.style.backgroundColor="green";
+}else{
+    element.style.backgroundColor="red";
+}
+}
+</script>
